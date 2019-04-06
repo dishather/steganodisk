@@ -1,0 +1,28 @@
+Prerequisites:
+
+- Qt 5.0 or later (4.x may work, but YMMV).
+- OpenSSL development package (headers and libraries).
+
+
+Building under Linux:
+
+1. Fix steganodisk.pro to point to your installation of
+   OpenSSL.
+
+2.
+qmake
+make
+
+
+Bulding under Windows (Visual Studio command-line prompt):
+
+1. Fix steganodisk.pro to point to your installation of
+   OpenSSL.
+
+2.
+qmake
+nmake
+(fix compile errors and repeat - I did not test windows builds).
+
+Note that Windows build is incomplete and can only handle
+image files. Working with disk devices is not supported yet.
